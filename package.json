@@ -1,0 +1,29 @@
+{
+  "name": "footy2",
+  "version": "0.0.1",
+  "description": "",
+  "author": "Claes",
+  "license": "",
+  "scripts": {
+    "start1": "node .",
+    "build": "babel src -d lib",
+    "build-and-start": "babel src -d lib; node ."
+  },
+  "bin": {
+    "footy2": "bin/footy2"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "main": "lib/app",
+  "dependencies": {
+    "immutable": "3.8.2",
+    "minimist": "1.2.0",
+    "random-js": "1.0.8"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-preset-env": "1.7.0"
+  }
+}

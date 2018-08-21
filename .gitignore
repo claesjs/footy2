@@ -1,0 +1,5 @@
+.DS_Store
+
+input/*
+lib/
+node_modules/
