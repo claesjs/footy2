@@ -3,7 +3,6 @@ import { tactics } from './ratings.js';
 import TeamRecord from './data/TeamRecord.js';
 
 export const readTeamSheet = teamSheetName => {
-  let json = undefined;
   let sheetJson = undefined;
   let teamJson = undefined;
 

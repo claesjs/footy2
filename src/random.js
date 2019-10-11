@@ -1,12 +1,10 @@
-import Random from 'random-js';
+import { MersenneTwister19937, Random } from 'random-js';
 
-const mt = Random.engines.mt19937();
-const rndseed = Date.now();
+const seed = Date.now();
+const mt = MersenneTwister19937.seed(seed);
 const random = new Random(mt);
 
-mt.seed(rndseed);
-
-export const getSeed = () => rndseed;
+export const getSeed = () => seed;
 
 export const get = max => {
   return random.real(0, max);

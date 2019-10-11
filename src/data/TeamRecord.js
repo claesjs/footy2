@@ -27,10 +27,6 @@ const keys = {
   penaltiesScored: 0
 };
 
-const calculateRatings = (rating, players, tactic, oppTactic) => {
-  return rating.calculateRatings(rating, players, tactic, oppTactic)
-};
-
 const getActivePlayers = (players, pos) => players.filter(p => p.redCards === 0 && p.position === pos).map(p => p.name);
 const getActiveStarPlayers = players => players.filter(p => p.redCards === 0 && p.isStarPlayer()).map(p => p.name);
 const getPlayerIndex = (players, playerName) => players.findIndex(p => p.name === playerName);
@@ -216,6 +212,6 @@ class TeamRecord extends Record(keys) {
   hasYellowCard(playerName) {
     return this.players.get(getPlayerIndex(this.players, playerName)).yellowCards > 0;
   }
-};
+}
 
 export default TeamRecord;

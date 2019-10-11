@@ -3,3 +3,4 @@
 input/*
 lib/
 node_modules/
+.idea/

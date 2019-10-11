@@ -20,7 +20,7 @@
   "dependencies": {
     "immutable": "3.8.2",
     "minimist": "1.2.0",
-    "random-js": "1.0.8"
+    "random-js": "2.1.0"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",

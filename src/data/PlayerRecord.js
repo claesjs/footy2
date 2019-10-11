@@ -22,6 +22,6 @@ class PlayerRecord extends Record(keys) {
   isStarPlayer() {
     return this.name.slice(-1) === '*';
   }
-};
+}
 
 export default PlayerRecord;

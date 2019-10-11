@@ -11,6 +11,6 @@ class StateRecord extends Record(keys) {
   log(event) {
     return this.set('matchLog', this.matchLog.push(event));
   }
-};
+}
 
 export default StateRecord;
