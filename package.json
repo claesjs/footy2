@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "author": "Claes",
-  "license": "",
+  "license": "ISC",
   "scripts": {
     "start1": "node .",
     "build": "babel src -d lib",
